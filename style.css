@@ -33,6 +33,7 @@
 
 .lightbox-1 {
   background-color: rgb(170, 179, 180);
+  display: block;
 }
 
 .lightbox-2 {
@@ -178,8 +179,6 @@
 }
 
 .button {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: bold;
   border-radius: 50%;
   color: rgb(82, 96, 95);
   cursor: pointer;
@@ -199,12 +198,10 @@
 }
 .button-container .slides__prev-button,
 .button-container .slides__next-button {
-  color: rgb(84, 88, 88);
   /* border: 2px solid rgb(235, 237, 237); */
   border: 2px solid rgba(235, 237, 237, 0);
   width: 3rem;
   height: 3rem;
-  font-size: 1.5rem;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -214,11 +211,20 @@
 .button-container .slides__prev-button:hover,
 .button-container .slides__next-button:hover {
   border: 2px solid rgb(235, 237, 237);
-  color: rgb(235, 237, 237);
+  fill: rgb(235, 237, 237);
+}
+.button-container .slides__prev-button:hover svg,
+.button-container .slides__next-button:hover svg {
+  fill: rgb(235, 237, 237);
 }
 
 .slides__prev-button {
   transform: rotate(180deg);
+}
+
+.arrow-head {
+  width: 1.6rem;
+  fill: rgb(84, 88, 88);
 }
 
 .button-container .l2__prev-button:hover,
@@ -226,17 +232,20 @@
   /* border: 2px solid rgb(210, 210, 210);
   color: rgb(210, 210, 210); */
   border: 2px solid #e187c8;
-  color: #e187c8;
+}
+.button-container .l2__prev-button:hover svg,
+.button-container .l2__next-button:hover svg {
+  fill: #e187c8;
 }
 
 .slides__close-button {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   top: 2rem;
   right: 3rem;
   background-color: rgb(235, 237, 237);
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,6 +283,7 @@ body {
   font-weight: inherit;
   scroll-behavior: smooth;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* NAV */
@@ -1222,9 +1232,11 @@ nav {
   }
   .button-container .slides__prev-button,
   .button-container .slides__next-button {
-    font-size: 1.75rem;
     width: 3.25rem;
     height: 3.25rem;
+  }
+  .arrow-head {
+    width: 1.75rem;
   }
 }
 @media screen and (min-width: 500px) and (min-height: 900px) {
@@ -1233,7 +1245,6 @@ nav {
   }
   .button-container .slides__prev-button,
   .button-container .slides__next-button {
-    font-size: 2rem;
     width: 3.5rem;
     height: 3.5rem;
   }
