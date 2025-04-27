@@ -337,6 +337,7 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
+  z-index: 0;
 }
 
 .nav-text {
@@ -370,6 +371,11 @@ nav {
     top: 112.25px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .project-tab-dropdown {
+    top: 80px;
+  }
+}
 @media screen and (max-width: 1075px) {
   .nav-text-1 {
     padding: 0 10px;
@@ -391,7 +397,7 @@ nav {
     width: 6rem;
   }
   .project-tab-dropdown {
-    top: 60.25px;
+    top: 60px;
     max-width: 100px;
   }
   .pt-d-menu-items {
@@ -533,6 +539,7 @@ nav {
   z-index: 4;
   margin-top: -5px;
   background-color: #181319;
+  overflow-y: hidden;
 }
 
 .footer-content {
