@@ -472,6 +472,7 @@ nav {
 
 .gl-images-1 {
   width: 38.5rem;
+  z-index: 1;
 }
 
 .gl-title__mobile {
@@ -491,6 +492,7 @@ nav {
   width: 55rem;
   margin-left: -5%;
   padding-right: 0.5rem;
+  z-index: 1;
 }
 
 /* divider text */
