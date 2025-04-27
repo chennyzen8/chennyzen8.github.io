@@ -1306,5 +1306,19 @@ nav {
     height: 3.75rem;
   }
 }
+@media screen and (max-width: 1019px) {
+  .slides__close-button {
+    font-size: 1.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+@media screen and (max-width: 365px) {
+  .slides__close-button {
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
