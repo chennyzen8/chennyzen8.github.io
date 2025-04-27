@@ -1170,6 +1170,10 @@ nav {
     height: 500px;
     margin-top: 0;
   }
+  .l5__2_first-slide,
+  l5__3_first-slide {
+    margin-left: 60px;
+  }
   .edited-photos-section {
     height: 95%;
     min-width: 360px;
