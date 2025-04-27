@@ -6,7 +6,6 @@ const project_tab_dropdown = document.querySelector(".project-tab-dropdown");
 
 project_tab.addEventListener("mouseover", (e) => {
   project_tab_dropdown.style.display = "block";
-  console.log(e);
 });
 
 project_tab.addEventListener("mouseout", (e) => {
@@ -19,7 +18,6 @@ const video = document.querySelector(".video");
 video.loop = true;
 window.addEventListener("load", (e) => {
   video.play();
-  console.log(document.querySelector(".title-link"));
 });
 
 const videoPause = () => {
@@ -35,8 +33,6 @@ const videoPlay = () => {
 const lightbox_header = document.querySelector(".lightbox-header");
 
 const open_lightbox_header = (e) => {
-  console.log("click");
-  //   console.log(e)
   lightbox_header.style.display = "block";
 };
 
@@ -47,7 +43,6 @@ const close_lightbox_header = (e) => {
 const lightbox_4 = document.querySelector(".lightbox-4");
 
 const open_lightbox_4 = (e) => {
-  console.log("click");
   lightbox_4.style.display = "block";
 };
 
@@ -58,7 +53,6 @@ const close_lightbox_4 = (e) => {
 const lightbox_5__1 = document.querySelector(".lightbox-5__1");
 
 const open_lightbox_5__1 = (e) => {
-  console.log("click");
   lightbox_5__1.style.display = "block";
 };
 
@@ -69,7 +63,6 @@ const close_lightbox_5__1 = (e) => {
 const lightbox_5__2 = document.querySelector(".lightbox-5__2");
 
 const open_lightbox_5__2 = (e) => {
-  console.log("click");
   lightbox_5__2.style.display = "block";
 };
 
@@ -80,7 +73,6 @@ const close_lightbox_5__2 = (e) => {
 const lightbox_5__3 = document.querySelector(".lightbox-5__3");
 
 const open_lightbox_5__3 = (e) => {
-  console.log("click");
   lightbox_5__3.style.display = "block";
 };
 
@@ -91,7 +83,6 @@ const close_lightbox_5__3 = (e) => {
 const lightbox_6__1 = document.querySelector(".lightbox-6");
 
 const open_lightbox_6__1 = (e) => {
-  console.log("click");
   lightbox_6__1.style.display = "block";
 };
 
@@ -250,7 +241,6 @@ const add_photos = (gallery_no__mv, photos_array, first_slide) => {
     gallery_no__mv.append(new_photo);
     new_photo.addEventListener("click", (e) => {
       first_slide.style.backgroundImage = `url(${photo_url})`;
-      console.log("should change");
     });
   });
 };
@@ -277,7 +267,6 @@ const l5__3_finished_edit = document.querySelector(".l5__3_finished-edit");
 const l6__1_finished_edit = document.querySelector(".l6__1_finished-edit");
 
 l4__1_finished_edit.addEventListener("click", (e) => {
-  console.log("should change!");
   l4__1_first_slide.style.backgroundImage = "url(assets/images/gl-image-4.png)";
 });
 
